@@ -1,5 +1,6 @@
 package network.data
 
-data class Quiz(
-    var questions: List<Question>
-)
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class Quiz(var questions: List<Question>)
